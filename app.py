@@ -1,14 +1,12 @@
 from flask import Flask
 from flask import render_template
 from flask import Response, request, jsonify
-from flask_cors import CORS
 
 import requests
 import time
 import bs4 as bs
 from selenium import webdriver
 app = Flask(__name__)
-CORS(app)
 
 #chatgpt
 import os
