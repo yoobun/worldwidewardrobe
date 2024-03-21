@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Required meta tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- jquery -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="/static/style.css">
+
+        <!-- CSS stylesheet -->
+        <link rel="stylesheet" href="/static/style.css"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Playfair+Display+SC&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+        
+        <title>world wide wardbrobe</title>
+    </head>
+    <body>
+        <div class="container-fluid" id="header">
+            <div class="d-flex mt-md-5 ml-md-4">
+                <div class="p-2 mr-auto">
+                    <h1 class="title">www.WORLDWIDE<span class="highlighted", style="font-weight: bold;">WARDROBE</span>.com</h1>
+                </div>
+                <div class="p-2">
+                    <a href="{{ url_for('home') }}">
+                        <img src="/static/logo.jpg" class="img-fluid fixed-image" style="width:150px" id="logo-img">
+                    </a>
+                </div>
+        </div>
+        <div class="container-fluid" id="about">
+            <div class="row mt-lg-4">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-4 text-right">
+                        <h2 class="about-subtitle  display-5 mt-custom"><span style="font-size: 2.5vw;" class="highlighted">everyone deserves<br>to find their<br>style</span></h2>
+                        <div class="body-container">
+                            <p class="description mt-4">worldwide wardrobe delivers style advice tailored to your personal tastes to help make you look, feel, and be your world-wide best... </p>
+                            <p class="description mt-5">we help you feel you can show your wardrobe to the whole wide world.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 bg-white mb-5">
+                        <h1 class="title display-5">/about_us</h1>
+                        <img class="img-fluid" src="/static/banner.jpg" style="width:650px" id="banner-img">
+                    </div>
+            </div>
+            <div class=" mb-5 features-link">
+                <a href="#features">
+                    <p>WHAT CAN I DO?</p>
+                </a>
+            </div>
+        </div>
+        <div class="container-fluid" id="features">
+            <h1 class="mt-custom display-1" style="font-family: 'Playfair Display SC', serif;">INTO THE WARDROBE...</h1>
+        </div>
+        <div class="container-lg">
+            <div class="d-flex flex-column m-nav" id="style-suggestions">
+                <div class="p-2 ml-custom mt-3">
+                    <h2 class="about-subtitle " style="font-size: 50px;">get outfit and style suggestions</h2>
+                </div>
+                <div class="p-2 ml-5">
+                    <span class="display-4 ml-custom" style="font-family: 'IBM Plex Mono', monospace;">www.worldwide<span style="color:#4286F3">wardrobe</span>/</span>
+                    <a href="{{ url_for('likes') }}">
+                        <button type="button" class="button btn btn-light btn-lg">style builder</button>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex flex-column m-nav" id="style-suggestions">
+                <div class="p-2 ml-custom">
+                    <h2 class="about-subtitle " style="font-size: 50px;">get brand recommendations</h2>
+                </div>
+                <div class="p-2 ml-5 mb-4">
+                    <span class="display-4 ml-custom" style="font-family: 'IBM Plex Mono', monospace;">www.worldwide<span style="color:#4286F3">wardrobe</span>/</span>
+                    <a href="{{ url_for('brand_styles') }}">
+                        <button type="button" class="button btn btn-light btn-lg">brand explorer</button>
+                    </a>
+                </div>
+            </div>
+            <div class="container-fluid text-right">
+                <h1 class="mt-custom display-1" style="font-family: 'Playfair Display SC', serif;">...OUT TO THE WORLD</h1>
+            </div>
+        </div>
+    </body>
+    
+</html>
